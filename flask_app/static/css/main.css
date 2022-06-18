@@ -65,7 +65,7 @@ h4, h5, h6 {
 }
 
 span.color {
-	color: #0f8feb;
+	color: #1e2a65;
 }
 
 body > section,
@@ -73,7 +73,12 @@ body > section,
 	padding: 70px 0;
 }
 
-.sec-title {}
+.sec-title {
+  color: #565ea3;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
 
 .sec-title h2 {
   color: #565ea3;
@@ -141,7 +146,7 @@ body > section,
 ==========================================*/
 
 #navigation {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   border: 0 none;
   margin: 0;
   
@@ -168,7 +173,7 @@ body > section,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
 	background-color: transparent;
-	border-top: 1px solid #1b6ce5;
+	border-top: 1px solid #000000;
 	color: #fff;
 }
 
@@ -181,10 +186,13 @@ body > section,
 
 #slider {
 	padding: 0;
-}
-
-#slider .carousel-inner .item {
-  background-size: cover;
+  background-image: url("../img/banner.jpg");
+	background-color: rgba(6,32,51,.8);
+	background-attachment: fixed !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
 }
 
 .carousel-caption {
