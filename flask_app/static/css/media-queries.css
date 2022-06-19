@@ -3,6 +3,10 @@
 ==============================================================*/
 
 @media (min-width: 980px) and (max-width: 1150px) {
+  .marco-coding{
+    max-width: 100%;
+    margin: 0 1px;
+  }
 
 /* slider */
 .carousel-caption h3 {
@@ -26,6 +30,10 @@
 ==============================================================*/
 
 @media (min-width: 768px) and (max-width: 979px) {
+  .marco-coding{
+    max-width: 100%;
+    margin: 0 1px;
+  }
 
 
 /* slider */
@@ -117,6 +125,10 @@ background-position: center top !important;
 ==============================================================*/
 
 @media only screen and (max-width: 767px) {
+  .marco-coding{
+    max-width: 100%;
+    margin: 0 1px;
+  }
 
 .sec-sub-title p {
   font-size: 14px;
@@ -226,6 +238,10 @@ background-position: center top !important;
 
 
 /* services */
+.marco-coding{
+  max-width: 100%;
+  margin: 0 1px;
+}
 
 .service-item {
   margin: 0 auto 30px;
