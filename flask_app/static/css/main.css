@@ -319,11 +319,11 @@ top: -8px;
 }
 
 .service-icon {
-  border: 1px solid #0f8ba7;
+  border: 2px solid #0e14b4;
   border-radius: 50%;
   color: #0e14b4;
   float: left;
-  padding: 10px 13px;
+  padding: 10px 10px;
 }
 
 .service-desc {
