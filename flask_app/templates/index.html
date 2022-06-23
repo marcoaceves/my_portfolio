@@ -295,6 +295,7 @@
 
 					<!-- end contact address -->
 					<!-- contact form -->
+					<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="contact-form">
 							<form action="#" id="contact-form">
@@ -319,7 +320,7 @@
 					<!-- footer social links -->
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
 						<ul class="footer-social">
-							<li><a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by Royyan Wijaya - Flaticon</a></li>
+							<li></li>
 						</ul>
 					</div>
 					<!-- end footer social links -->
@@ -332,7 +333,8 @@
         ==================================== -->
 		<footer id="footer" class="footer">
 			<p class="copyright text-center">
-							Copyright © 2022 <a href="http://themefisher.com/">Themefisher & Marco Aceves</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher.</a> Additional Designed & developed by Marco Aceves
+							Copyright © 2022 <a href="http://themefisher.com/">Themefisher & Marco Aceves</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher.</a> Additional Designed & developed by Marco Aceves.
+							<a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by Royyan Wijaya - Flaticon</a>
 			</p>
 		</footer>
 		<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
@@ -413,15 +415,23 @@
 					},
 					submitHandler: function(form) {
 						$(form).ajaxSubmit({
-							method:"POST",
-							data: $(form).serialize(),
-							url:"static/process.php",
-							success: function() {
+							type:"POST",
+							data: {
+								name :$(name).val(),
+								email :$(email).val(),
+								message :$(message).val(),
+
+							},
+							url:"http://localhost:5000/a",
+
+							success: function(data) {
+								
 								$('#contact-form :input').attr('disabled', 'disabled');
 								$('#contact-form').fadeTo( "slow", 0.15, function() {
 									$(this).find(':input').attr('disabled', 'disabled');
 									$(this).find('label').css('cursor','default');
 									$('#success').fadeIn();
+									$('#successAlert').text(data.flash).show();
 								});
 							},
 							error: function() {
@@ -429,7 +439,8 @@
 									$('#error').fadeIn();
 								});
 							}
-						});
+						})
+
 					}
 				});
 			});
