@@ -293,6 +293,15 @@ top: -8px;
   border-radius: 1%;
   box-shadow: 0 0 20px #0151ff;
 }
+#aboutMe{ 
+  color: #f2e9e9;
+  background-color: #2184d6ca;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 1%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 /*=========================================
 	Technical_skills
