@@ -3,6 +3,11 @@
 ==============================================================*/
 
 @media (min-width: 980px) and (max-width: 1150px) {
+  .navbar-brand {
+    padding: 0px;
+    padding-left: 30;
+  }
+
   .marco-coding{
     max-width: 100%;
     margin: 0 1px;
@@ -30,6 +35,11 @@
 ==============================================================*/
 
 @media (min-width: 768px) and (max-width: 979px) {
+  .navbar-brand {
+    padding: 0px;
+    padding-left: 30;
+  }
+
   .marco-coding{
     max-width: 100%;
     margin: 0 1px;
@@ -125,6 +135,16 @@ background-position: center top !important;
 ==============================================================*/
 
 @media only screen and (max-width: 767px) {
+  #navigation {
+    background-color: rgb(22, 22, 23);
+    border: 0 none;
+    margin: 0;
+
+  }
+  .navbar-brand {
+    padding: 10px;
+
+  }
   .marco-coding{
     max-width: 100%;
     margin: 0 1px;
@@ -230,13 +250,24 @@ background-position: center top !important;
 }
 
 
+
 /*============================================================
 	Mobile (Landscape) Design for a width of 480px
 ==============================================================*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
+  .navbar-brand {
+    padding: 0px;
+    margin-left: 20px;
+    padding-left: 30;
+  }
+  #navigation {
+    background-color: rgb(22, 22, 23);
+    border: 0 none;
+    margin: 0;
 
+  }
 /* services */
 .marco-coding{
   max-width: 100%;

@@ -12,9 +12,7 @@
         <title>Marco Aceves Portfolio</title>
 		<link rel="icon" href="static/img/code.png">
 		<!-- Meta Description -->
-        <meta name="description" content="Blue One Page Creative HTML5 Template">
-        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
-        <meta name="author" content="Muhammad Morshed">
+        <meta name="description" content="Marco Aceves Portfolio">
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Google Font -->
@@ -207,13 +205,13 @@
 
 					<!-- single member -->
 					<figure class="projects-project col-md-6 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-						<h4>Pharmacy Task Manager</h4>
-						<span>Built for AHF Pharmacy</span>
+						<h4>Task Manager Web Application (Python, Flask, MySQL)</h4>
+						<span>AHF Phamrmacy</span>
 						<div class="member-thumb">
 							<img src="static/img/projects/project-1.png" alt="Pharmacy Employee Task Manager" class="img-responsive">
 							<figcaption class="overlay">
 								<h5>Pharmacy Employee Task Manager</h5>
-								<p>Task managing software created for AHF pharmacy. Allows the Pharmacy Manager to assign tasks to employees. Employees can update their task throughout the day. Video demonstration on available YouTube. </p>
+								<p>Task managing allows the Pharmacy Manager to assign tasks to employees. Employees can update their task throughout the day. Video demonstration on available YouTube. </p>
 								<ul class="social-links text-center">
 									<li><a href="https://github.com/marcoaceves/manager_app/" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
 									<li><a href="https://youtu.be/Wd_Ve_uTISE" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
@@ -224,7 +222,7 @@
 					<!-- end single member -->
 					<!-- single member -->
 					<figure class="projects-project col-md-6 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-						<h4>Ubiquity Website</h4>
+						<h4>Ubiquity Website (Python, Flask, MySQL)</h4>
 						<span>Metal Band from Los Angeles, CA</span>
 						<div class="member-thumb">
 							<img src="static/img/projects/project-2.png" alt="Team Member" class="img-responsive">
@@ -243,11 +241,12 @@
 					<!-- single member -->
 					<figure class="projects-project col-md-6 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 						<h4>Project Manager (In Development)</h4>
-						<span>Assists Users to work together on Software</span>
+						<span>Collaboration Project</span>
 						<div class="member-thumb">
 							<img src="static/img/projects/project-3.png" alt="Team Member" class="img-responsive">
 							<figcaption class="overlay">
-								<h5>Project Manager (In Development)</h5>
+								<h5>Assists Users to work together on Software
+								</h5>
 								<p> </p>
 								<ul class="social-links text-center">
 									<li><a href="https://github.com/marcoaceves/project_portfolio_collab" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
@@ -413,7 +412,6 @@
 				/* ========================================================================= */
 				/*	Contact Form
 				/* ========================================================================= */
-				
 				$('#contact-form').validate({
 					rules: {
 						name: {
@@ -425,7 +423,8 @@
 							email: true
 						},
 						message: {
-							required: true
+							required: true,
+							minlength: 10
 						}
 					},
 					messages: {
@@ -437,8 +436,8 @@
 							required: "Please Enter Email"
 						},
 						message: {
-							required: "um...yea, you have to write something to send this form.",
-							minlength: "thats all? really?"
+							required: "Please write something to send this form.",
+							minlength: "Your message must be at least 10 characters"
 						}
 					},
 					submitHandler: function(form) {
@@ -453,7 +452,6 @@
 							url:"/a",
 
 							success: function(data) {
-								
 								$('#contact-form :input').attr('disabled', 'disabled');
 								$('#contact-form').fadeTo( "slow", 0.15, function() {
 									$(this).find(':input').attr('disabled', 'disabled');
