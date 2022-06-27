@@ -187,8 +187,8 @@ body > section,
 .navbar-nav li a.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
-	background-color: rgb(114, 143, 250);
-	border: 1px solid #000000;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #00000000;
 	color: #fff;
 }
 
