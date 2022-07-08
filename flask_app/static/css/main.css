@@ -184,11 +184,20 @@ body > section,
 }
 
 .navbar-brand {
+
   padding: 0px 30px;
-  padding-left: 30;
-  margin-left: 3;
+
+}
+#logo {
+  text-align: center;
+
+  padding-top: 5px;
 }
 
+.img-responsive-ma{    display: block;
+  max-width: 100%;
+  height: auto;
+  align-items: center;}
 .navbar-nav li a {
 	border-top: 1px solid transparent;
 }
