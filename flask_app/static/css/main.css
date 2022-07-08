@@ -51,7 +51,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-    color: #6c97b6;
+    color: #ffffff;
 }
 
 h1, h2, h3,
@@ -205,8 +205,8 @@ body > section,
 .navbar-nav li a.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
-	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid #00000000;
+	background-color: transparent;
+	border: none;
 	color: #fff;
 }
 
