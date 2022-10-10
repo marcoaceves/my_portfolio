@@ -15,7 +15,9 @@ import os
 def index():
     return render_template('index.html')
 
-
+@app.route('/marco')
+def new_index():
+    return render_template("marco.html") 
 
 
 @app.route("/a", methods=['POST'])
