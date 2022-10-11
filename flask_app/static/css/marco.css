@@ -11,6 +11,7 @@ font-family: sans-serif;
 margin: 0%;
 
 }
+
 .nav_bar a{
     color: white;
     padding: 14px 16px;
@@ -61,12 +62,14 @@ section{
     padding: 10px;
     margin: 15px 60px;
 }
+
 .inner_sec_1{
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
 }
+
 .profile_img{
     max-width: 100%;
         width: 30%;
@@ -90,9 +93,16 @@ h3 span{ font-size: 34px;
     }
 
 p{
-    margin-bottom: .1px; /* between paragraphs */
+    margin: .02; /* between paragraphs */
+    font-size: 17px;
+    line-height: 130%;
 
 }
+p span{ font-size: 17px;
+    font-weight: bold;
+    color: rgb(130, 130, 245);
+
+    }
 
 
 .main_btn{
@@ -130,14 +140,62 @@ p{
     max-width: 100%;
     width: 50%;
 }
+.techSkills h4{
+    font-size: 29px;
+    
+}
+.techSkills {
+    float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: 300px;
+  margin: 5%;
+
+    
+}
+.box2 h3{
+    text-align: center;
+    font-size: 34px;
+
+}
+.box2 {
+    
+    font-size: 34px;
+
+}
+.box2{ 
+    background-color: rgb(51, 46, 46);
+    align-items: center;
+    min-width: 300px;
+    min-height: auto;
+    max-height: fit-content;
+    max-width: auto;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1px;
+    text-align: center;
+    margin: 1px 60px;
+}
+.inner_sec_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
 
 /* reponsive */
 @media screen and (max-width: 1300px) {
     p {
-      font-size: 15px;
+      font-size: 17px;
     }
+    p span{ font-size: 17px;
+        font-weight: bold;
+        color: rgb(130, 130, 245);
+    
+        }
     h3, h3 span {
-      font-size: 20px;
+      font-size: 25px;
     }
     
     .nav_bar{
@@ -200,6 +258,11 @@ p{
       font-size: 15px;
     
     }
+    p span{ font-size: 17px;
+        font-weight: bold;
+        color: rgb(130, 130, 245);
+    
+        }
     h3, h3 span {
       font-size: 20px;
     }
