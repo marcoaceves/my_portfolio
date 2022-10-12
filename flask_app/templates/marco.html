@@ -19,13 +19,14 @@
 </head>
 <body>
     <div class="wrappper">
+        <!-- nav -->
         <div class="nav_bar">
-            <a href="#home" class="active">Marco Aceves</a>
+            <a href="#home" class="active" id="logo">Marco Aceves</a>
             <div id="myLinks">
                 <a href="#" class="nav_links">Home</a>
                 <a href="#" class="nav_links">About Me</a>
                 <a href="#technicalSkills" class="nav_links">Technical Skills</a>
-                <a href="#" class="nav_links">Projects</a>
+                <a href="#Projects" class="nav_links">Projects</a>
                 <a href="#" class="nav_links">Other Skills</a>
                 <a href="#" class="nav_links">Contact</a>
             </div>
@@ -34,6 +35,7 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <!-- section 1 about me -->
         <section>
             <div class="box">
                 <div class="inner_sec_1">
@@ -58,8 +60,9 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="box2" id="technicalSkills">
+        <!-- section 2 technical skills -->
+        <section id="technicalSkills">
+            <div class="box2" >
                 <!-- tittle -->
                 
                 <h3>Technical Skills</h3>
@@ -71,7 +74,7 @@
                         <div class="techSkillsType">
                             <img src="static/img/icons/front.png" alt="">
                             <h4>Front-End</h4>
-                            <p>HTML5, CSS​, JavaScript, Bootstrap</p>
+                            <p>HTML5, CSS3, JavaScript, Bootstrap</p>
                         </div>
                     </div>
 
@@ -88,9 +91,54 @@
                         <div class="techSkillsType">
                             <img src="static/img/icons/mysql.png" alt="">
                             <h4>Database </h4>
-                            <p>​MySQL, SQL, Deployment Via Amazon Web Services, Jinja, Object-Oriented Programming, GitHub​, VS code, WinSCP
+                            <p>MySQL, SQL, Deployment Via Amazon Web Services, Jinja, Object-Oriented Programming, GitHub, VS code, WinSCP
                             </p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 3 Projects -->
+        <section id="Projects">
+            <div class="box3" >
+                <!-- tittle -->
+                
+                <h3>Projects</h3>
+                <hr>
+                
+                <div class="inner_sec_3">
+                    <!-- Project 1-->
+                    <div class="projects">
+                        <img src="static/img/projects/project-1.png" alt="" style="max-width: 600px; width: 100%;">
+                        <h4>Work Management <span>Web Application</span> </h4>
+                        <p>A work Management Web Application that allows a Manager to assign tasks to employees. Employees can update their tasks throughout the day. </p>
+                        <button onclick="location.href='http://www.example.com'" type="button" class="main_btn">
+                            Detailed Information</button>
+                    </div>
+
+                    <!-- Project2 -->
+                    <div class="projects">
+                        <img src="static/img/projects/project-2.png" alt="" style="max-width: 600px; width: 100%;">
+                        <h4>Commision Business/Band <span>Website</span> </h4>
+                        <p>Band/Business allows the band manager to update members of the band, events, music, and videos.</p>
+                        <button onclick="location.href='http://www.example.com'" type="button" class="main_btn">
+                            Detailed Information</button>
+                    </div>
+                    <!-- Project3 -->
+                    <div class="projects">
+                        <img src="static/img/projects/project-3.png" alt="" style="max-width: 600px; width: 100%;">
+                        <h4> <span>Web Application</span>  Project Manager (In Development) </h4>
+                        <p>Allows Users to collaborate on group projects</p>
+                        <button onclick="location.href='http://www.example.com'" type="button" class="main_btn">
+                            Detailed Information</button>
+                    </div>
+                    <!-- Project3 -->
+                    <div class="projects">
+                        <img src="" alt="" style="max-width: 600px; width: 100%;">
+                        <h4></h4>
+                        <p></p>
+                        <!-- <button onclick="location.href='http://www.example.com'" type="button" class="main_btn">
+                            Detailed Information</button> -->
                     </div>
                 </div>
             </div>
