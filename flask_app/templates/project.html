@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Aceves</title>
+    <link rel="icon" href="static/img/code.png">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Marco Aceves"/>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="static/css/marco.css">
+    <link rel="stylesheet" href="static/css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <div class="wrappper">
+        <!-- nav -->
+        <div class="nav_bar">
+            <a href="#home" class="active" id="logo">Marco Aceves</a>
+            <div id="myLinks">
+                <a href="#" class="nav_links">Home</a>
+                <a href="#" class="nav_links">About Me</a>
+                <a href="#technicalSkills" class="nav_links">Technical Skills</a>
+                <a href="#Projects" class="nav_links">Projects</a>
+                <a href="#" class="nav_links">Other Skills</a>
+                <a href="#" class="nav_links">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+       
+        <section id="Projects">
+            <div class="box3" >
+                <!-- tittle -->
+                <h4>{{project_title|safe}}</4>
+                <hr>
+                <div class="inner_sec_4">
+                    <!-- Project 1-->
+                    <div class="project">
+                        <img src="{{project_img|safe}}" alt="" style="max-width: 600px; width: 100%;">
+                        <p style="margin-top:40px;">{{project_description|safe}} </p>
+                        <button onclick="location.href='/project-1'" type="button" class="main_btn">
+                            Detailed Information</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="technicalSkills">
+            <div class="box5" >
+                <!-- tittle -->
+                <h3>Technologies Used</h3>
+                <hr>
+                <!-- front end -->
+                <div class="inner_sec_5">
+                    <div class="techUsed">
+                        <img src="static/img/icons/front.png" alt="">
+                        <h4>Front-End</h4>
+                        <p>{{project_frontend}}</p>
+                    </div>
+                    <!-- back end -->
+                    <div class="techSkills">
+                        <img src="static/img/icons/python.png" alt="">
+                        <h4>Back-End</h4>
+                        <p>{{project_backend}}</p>
+                    </div>
+                    <!-- databases -->
+                    <div class="techSkills">
+                        <img src="static/img/icons/mysql.png" alt="">
+                        <h4>Database </h4>
+                        <p>{{project_database}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Copyright © 2022 Marco Aceves Design & Development,</p>
+            <a target="_blank" href="https://icons8.com/icon/dhecLjnptiQg/front-end">Front End, Python, MySQL and Icon by Icons8</a>
+        </footer>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>
