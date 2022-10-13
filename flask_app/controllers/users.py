@@ -35,12 +35,26 @@ def project1():
 @app.route("/project-2")
 # ubiquity
 def project2():
-    return render_template('project.html')
+    project_img="static/img/projects/project-2.png"
+    project_title='Work Management <span>Web Application</span>'
+    project_frontend='HTML, CSS, Javascript, Bootstrap'
+    project_backend='Python, Flask'
+    project_database=' MySQL, AWS Ubuntu Server(Deployment)' 
+
+    project_description='Custom Built for AHF Pharmacy, A work Management Web Application that allows a Manager to assign tasks to employees. Employees can update their tasks throughout the day.'
+    return render_template('project.html', project_title=project_title, project_description=project_description, project_img=project_img, project_frontend=project_frontend, project_backend=project_backend, project_database=project_database)
 
 @app.route("/project-3")
 # Project Collab
 def project3():
-    return render_template('project.html')
+    project_img="static/img/projects/project-3.png"
+    project_title='Work Management <span>Web Application</span>'
+    project_frontend='HTML, CSS, Javascript, Bootstrap'
+    project_backend='Python, Flask'
+    project_database=' MySQL, AWS Ubuntu Server(Deployment)' 
+
+    project_description='Custom Built for AHF Pharmacy, A work Management Web Application that allows a Manager to assign tasks to employees. Employees can update their tasks throughout the day.'
+    return render_template('project.html', project_title=project_title, project_description=project_description, project_img=project_img, project_frontend=project_frontend, project_backend=project_backend, project_database=project_database)
 
 @app.route("/project-4")
 def project4():
