@@ -13,8 +13,7 @@
     
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="static/css/marco.css">
-    <link rel="stylesheet" href="static/css/project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
 
 </head>
@@ -31,54 +30,44 @@
                 <a href="#" class="nav_links">Other Skills</a>
                 <a href="#" class="nav_links">Contact</a>
             </div>
+
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-       
-        <section id="Projects">
-            <div class="box3" >
-                <!-- tittle -->
-                <h4>{{project_title|safe}}</4>
-                <hr>
-                <div class="inner_sec_4">
-                    <!-- Project 1-->
-                    <div class="project">
-                        <img src="{{project_img|safe}}" alt="" style="max-width: 600px; width: 100%;">
-                        <p style="margin-top:40px;">{{project_description|safe}} </p>
-                        <button onclick="location.href='/project-1'" type="button" class="main_btn">
-                            Detailed Information</button>
-                    </div>
+        <!-- section 1 about me -->
+        <section>
+            <div class="box">
+                <div class="inner_sec_1">
+                    <div class="about">
+                        					<!-- contact form -->
+					<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+						<div class="contact-form">
+							<form action="#" id="contact-form">
+								<div class="input-group name-email">
+									<div class="input-field">
+										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+									</div>
+									<div class="input-field">
+										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
+									</div>
+								</div>
+								<div class="input-group">
+									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+								</div>
+								<div class="input-group">
+									<input type="submit" id="form-submit" class="btn pull-right" value="Send message">
+								</div>
+							</form>
+						</div>
+					
+					<!-- end contact form -->
+                        
                 </div>
             </div>
         </section>
-        <section id="technicalSkills">
-            <div class="box5" >
-                <!-- tittle -->
-                <h3>Technologies Used</h3>
-                <hr>
-                <!-- front end -->
-                <div class="inner_sec_5">
-                    <div class="techUsed">
-                        <img src="static/img/icons/front.png" alt="">
-                        <h4>Front-End</h4>
-                        <p>{{project_frontend}}</p>
-                    </div>
-                    <!-- back end -->
-                    <div class="techSkills">
-                        <img src="static/img/icons/python.png" alt="">
-                        <h4>Back-End</h4>
-                        <p>{{project_backend}}</p>
-                    </div>
-                    <!-- databases -->
-                    <div class="techSkills">
-                        <img src="static/img/icons/mysql.png" alt="">
-                        <h4>Database </h4>
-                        <p>{{project_database}}</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
         <footer class="footer">
             <p>Copyright © 2022 Marco Aceves Design & Development,</p>
             <a target="_blank" href="https://icons8.com/icon/dhecLjnptiQg/front-end">Front End, Python, MySQL and Icon by Icons8</a>
@@ -99,5 +88,7 @@
           }
         }
         </script>
+
 </body>
+
 </html>

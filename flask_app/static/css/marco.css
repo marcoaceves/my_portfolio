@@ -299,8 +299,22 @@ p span{ font-size: 17px;
 
     
 }
+
+.project_links{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#project_links_img {
+    margin: 5px;
+    width: 50px;
+
+}
+
 /* reponsive */
 @media screen and (max-width: 1300px) {
+    
     p, ul, li   {
       font-size: 17px;
     }
