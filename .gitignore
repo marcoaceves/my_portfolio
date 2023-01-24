@@ -12,6 +12,8 @@ instance/*
 __pycache__/
 *.py[cod]
 *$py.class
+#Ignore
+creds.py
 
 # C extensions
 *.so
