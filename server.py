@@ -1,4 +1,4 @@
-from flask_app.controllers import users, creds, nasa
+from flask_app.controllers import users, creds, nasa, brawl
 from flask_app import app
 
 
