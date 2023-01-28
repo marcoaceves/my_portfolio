@@ -13,15 +13,15 @@ def brawlers():
 
     
 
-    url= f'https://api.brawlstars.com/v1/brawlers'
+    url= f'https://api.brawlapi.com/v1/brawlers'
 
-    response = requests.get(url, headers=headers) 
+    response = requests.get(url) 
 
 
     
     brawlers_data = response.json()
     # print(brawlers_data, "random data")
-    print(brawlers_data["items"][1], "random data")
+    print(brawlers_data["list"][1]['id'], "random data")
 
 
-    return render_template('marco.html', brawlers_data=brawlers_data)
+    return render_template('brawl.html', brawlers_data=brawlers_data)
