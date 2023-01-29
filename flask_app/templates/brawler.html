@@ -59,12 +59,25 @@
             <img src="{{brawlers_data['imageUrl3']}}" alt="" style="width: 100px;">
           </a>
           <h1>{{brawlers_data['name']}}</h1>
+          <p>Rarity: {{brawlers_data['rarity']['name']}}</p>
+          {% for i in range(brawlers_data['starPowers'] |length) %}
+          <div class="d-flex">
+            <img src="{{brawlers_data['starPowers'][i]['imageUrl']}}" alt="" style="width: 50px;">
+            <p>Star Power : {{brawlers_data['starPowers'][i]['name']}}</p>
+            
+          </div>
+          
+     
+          <p>Description: {{brawlers_data['starPowers'][i]['description']}}</p>
+          
+
+          {% endfor %}
         </div>
       </div>
 
       
 
 
-      <h1>API data provided by: <a href="https://brawlify.com/">brawlify.com</a> </h1>
+      <!-- <h1>API data provided by: <a href="https://brawlify.com/">brawlify.com</a> </h1> -->
 </body>
 </html>
