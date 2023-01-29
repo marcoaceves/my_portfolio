@@ -22,7 +22,7 @@
     rel="stylesheet"
     />
     <link rel="icon" href="static/img/code.png">
-    <link rel="stylesheet" href="static/css/brawl.css">
+    <link rel="stylesheet" href="../static/css/brawl.css">
 </head>
 <body>
     <section class="">
@@ -54,14 +54,12 @@
 
 
       <div class="all_brawlers">
-        {% for i in range(brawlers_data['list'] |length) %}
         <div class="brawler">
-          <a href="/brawler/{{brawlers_data['list'][i]['id']}}">
-            <img src="{{brawlers_data['list'][i]['imageUrl3']}}" alt="" style="width: 100px;">
+          <a href="/brawler/{{brawlers_data['id']}}">
+            <img src="{{brawlers_data['imageUrl3']}}" alt="" style="width: 100px;">
           </a>
-          <h1>{{brawlers_data['list'][i]['name']}}</h1>
+          <h1>{{brawlers_data['name']}}</h1>
         </div>
-        {% endfor%}
       </div>
 
       
