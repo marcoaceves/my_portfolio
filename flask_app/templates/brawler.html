@@ -22,13 +22,14 @@
     rel="stylesheet"
     />
     <link rel="icon" href="static/img/code.png">
-    <link rel="stylesheet" href="../static/css/brawl.css">
+    <link rel="stylesheet" href="../static/css/brawler.css">
 </head>
 <body>
     <section class="">
         <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brawl Stars Project </a>
+            
+            <a class="navbar-brand" href="/brawlstars"><img style="width:35px; margin-right: 10px;" src="../static/img/icons/Logo_brawl_stars.svg" alt=""> Brawl Stars Project </a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fas fa-bars"></i>
             </button>
@@ -36,9 +37,6 @@
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="/brawlstars">All Brawlers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Compare Brawlers</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" aria-current="page" href="/">Marco Aceves</a>
@@ -59,19 +57,45 @@
             <img src="{{brawlers_data['imageUrl3']}}" alt="" style="width: 100px;">
           </a>
           <h1>{{brawlers_data['name']}}</h1>
-          <p>Rarity: {{brawlers_data['rarity']['name']}}</p>
-          {% for i in range(brawlers_data['starPowers'] |length) %}
-          <div class="d-flex">
-            <img src="{{brawlers_data['starPowers'][i]['imageUrl']}}" alt="" style="width: 50px;">
-            <p>Star Power : {{brawlers_data['starPowers'][i]['name']}}</p>
+          <h4 >Rarity: <span {{rarity | safe}}> {{brawlers_data['rarity']['name']}}</span> </h4>
+          <div class="abilities">
+              <!-- star powers -->
             
+            <div  class=" col ">
+              {% for i in range(brawlers_data['starPowers'] |length) %}
+              <div class="gadgets">
+                <div class="d-flex ">
+                  <img src="{{brawlers_data['starPowers'][0]['imageUrl']}}" alt="" class="icon">
+                  <h4>Star Power: </h4>
+                </div>
+                <p><span>Name:</span> {{brawlers_data['starPowers'][i]['name']}}</p>
+                <p><span>Description:</span> {{brawlers_data['starPowers'][i]['description']}}</p>
+
+
+              </div>
+              
+              {% endfor %}
+            </div>
+
+            <!-- Gadgetss -->
+            <div class="col">
+              {% for i in range(brawlers_data['gadgets'] |length) %}
+              <div class="gadgets">
+                <div class="d-flex">
+                  <img src="{{brawlers_data['gadgets'][i]['imageUrl']}}" alt="" class="icon">
+                  <h4>Gadget: </h4>
+                </div>
+                <P><span>Name:</span> {{brawlers_data['gadgets'][i]['name']}}</p>
+                <p><span>Description:</span> {{brawlers_data['gadgets'][i]['description']}}</p>
+
+              </div>
+              {% endfor %}
+            </div>
+
           </div>
           
-     
-          <p>Description: {{brawlers_data['starPowers'][i]['description']}}</p>
-          
 
-          {% endfor %}
+          
         </div>
       </div>
 

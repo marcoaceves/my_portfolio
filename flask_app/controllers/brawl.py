@@ -28,6 +28,8 @@ def display_brawler(brawler_id):
     brawlers_data = response.json()
     # print(brawlers_data, "random data")
     print(brawlers_data, "brawler_data")
+    color= brawlers_data['rarity']['color']
+    rarity = f"style=\"color: {color}\""
+    print(rarity)
 
-
-    return render_template('brawler.html', brawlers_data=brawlers_data )
+    return render_template('brawler.html', brawlers_data=brawlers_data, rarity=rarity )
